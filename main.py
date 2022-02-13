@@ -32,7 +32,12 @@ def transform(soup):
 joblist = []
 
 for i in range(0,50,10):
+    print(f'Getting page, {i}')
     c = extract(0)
     transform(c)
 
-print(len(joblist))
+df = pd.DataFrame(joblist)
+
+print(df.head())
+
+df.to_csv('jobs.csv')
