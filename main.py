@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 
 def extract(page):
     headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0'}
-    url = f'https://www.indeed.com/jobs?q=Web+Developer&l=Saint+Paul%2C+MN&radius=100&fromage=1'
+    url = f'https://www.indeed.com/jobs?q=Junior+Software+Developer&l=Remote&fromage=1'
     r = requests.get(url, headers)
     soup = BeautifulSoup(r.content, 'html.parser')
     return soup
@@ -59,6 +59,6 @@ df = pd.DataFrame(joblist)
 print(df.head())
 
 TodaysDate = time.strftime("%Y-%m-%d")
-excelfilename = 'jobs-' + TodaysDate +".csv"
+excelfilename = 'jobs-' + 'junior-software-dev-' + TodaysDate +".csv"
 
 df.to_csv(excelfilename)
