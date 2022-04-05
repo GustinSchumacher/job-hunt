@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4ae15f-ecc9-4c44-b6df-76b5468de048" name="Changes" comment="" />
+    <list default="true" id="1d4ae15f-ecc9-4c44-b6df-76b5468de048" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/jobs-junior-software-dev-2022-03-30.csv" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
